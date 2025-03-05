@@ -3,66 +3,42 @@
     <div style="display: inline-block;">
         <h2 style="display: inline-block; vertical-align: middle; margin-top: 0;">YOLO-KAN</h2>
         <p>
-	<em><code>❯ REPLACE-ME</code></em>
 </p>
         <p>
 	<img src="https://img.shields.io/github/license/shankswhite/YOLO-KAN?style=flat-square&logo=opensourceinitiative&logoColor=white&color=A931EC" alt="license">
 	<img src="https://img.shields.io/github/last-commit/shankswhite/YOLO-KAN?style=flat-square&logo=git&logoColor=white&color=A931EC" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/shankswhite/YOLO-KAN?style=flat-square&color=A931EC" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/shankswhite/YOLO-KAN?style=flat-square&color=A931EC" alt="repo-language-count">
-</p>
-        <p>Built with the tools and technologies:</p>
-        <p>
-	<img src="https://img.shields.io/badge/Rust-000000.svg?style=flat-square&logo=Rust&logoColor=white" alt="Rust">
-	<img src="https://img.shields.io/badge/Keras-D00000.svg?style=flat-square&logo=Keras&logoColor=white" alt="Keras">
-	<img src="https://img.shields.io/badge/Streamlit-FF4B4B.svg?style=flat-square&logo=Streamlit&logoColor=white" alt="Streamlit">
-	<img src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white" alt="TensorFlow">
-	<img src="https://img.shields.io/badge/tqdm-FFC107.svg?style=flat-square&logo=tqdm&logoColor=black" alt="tqdm">
-	<img src="https://img.shields.io/badge/DuckDB-FFF000.svg?style=flat-square&logo=DuckDB&logoColor=black" alt="DuckDB">
-	<img src="https://img.shields.io/badge/NumPy-013243.svg?style=flat-square&logo=NumPy&logoColor=white" alt="NumPy">
-	<img src="https://img.shields.io/badge/Pytest-0A9EDC.svg?style=flat-square&logo=Pytest&logoColor=white" alt="Pytest">
-	<img src="https://img.shields.io/badge/Docker-2496ED.svg?style=flat-square&logo=Docker&logoColor=white" alt="Docker">
-	<br>
-	<img src="https://img.shields.io/badge/CMake-064F8C.svg?style=flat-square&logo=CMake&logoColor=white" alt="CMake">
-	<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat-square&logo=Python&logoColor=white" alt="Python">
-	<img src="https://img.shields.io/badge/C-A8B9CC.svg?style=flat-square&logo=C&logoColor=black" alt="C">
-	<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat-square&logo=GitHub-Actions&logoColor=white" alt="GitHub%20Actions">
-	<img src="https://img.shields.io/badge/ONNX-005CED.svg?style=flat-square&logo=ONNX&logoColor=white" alt="ONNX">
-	<img src="https://img.shields.io/badge/SciPy-8CAAE6.svg?style=flat-square&logo=SciPy&logoColor=white" alt="SciPy">
-	<img src="https://img.shields.io/badge/Material%20for%20MkDocs-526CFE.svg?style=flat-square&logo=Material-for-MkDocs&logoColor=white" alt="Material%20for%20MkDocs">
-	<img src="https://img.shields.io/badge/pandas-150458.svg?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
-</p>
-    </div>
-</div>
+
 <br clear="left"/>
 
-##  Table of Contents
+##  Authors
 
-- [ Overview](#-overview)
-- [ Features](#-features)
-- [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
-- [ Getting Started](#-getting-started)
-  - [ Prerequisites](#-prerequisites)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Testing](#-testing)
-- [ Project Roadmap](#-project-roadmap)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
+Xiaofeng Zhao, NEU CS Student
+
+
+
+Themina Amjad, NEU Professor
+
+
+
+Jeongkyu Lee, NEU Professor
 
 ---
 
 ##  Overview
 
-<code>❯ REPLACE-ME</code>
+<code>❯ Traditional Multi-Layer Perceptrons (MLPs) typically employ fixed activation functions and large weight matrices to learn the complex patterns present in these representations. This leads towards large growth in parameters but decreases the interpretability of the model. Kolmogorov-Arnold Networks (KANs) instead employ learnable activation functions inspired by the Kolmogorov–Arnold representation theorem, which is a more flexible way to model nonlinear relationships without inflating the counts of parameters excessively. This study proposes YOLO-KAN, a model based on YOLOv11n, where newly designed KAN modules replace portions of the traditional MLP structures of the backbone. The ablation experiments show that one of the proposed YOLO-KAN models achieves a 1.84\% improvement in precision over the yolov11n model in the COCO dataset. These findings suggest that KANs can match or surpass traditional MLPs in computer vision object detection, including large-scale datasets such as COCO. The result can help the community in designing versatile, real-time object detectors for a range of object recognition tasks.</code>
 
 ---
 
-##  Features
+##  Architecture
 
-<code>❯ REPLACE-ME</code>
+![](/Users/levon/Cloud/SynologyDrive/Projects/CV/yolo-kan-arch.png)
+
+
+
+![yolo-kan-flatten](/Users/levon/Cloud/SynologyDrive/Projects/CV/yolo-kan-flatten.jpg)
 
 ---
 
@@ -1651,8 +1627,7 @@
 
 Before getting started with YOLO-KAN, ensure your runtime environment meets the following requirements:
 
-- **Programming Language:** Python
-- **Package Manager:** Cmake, Cargo
+- **Programming Language:** Python, Ultralytics
 - **Container Runtime:** Docker
 
 
@@ -1671,132 +1646,5 @@ Install YOLO-KAN using one of the following methods:
 ```sh
 ❯ cd YOLO-KAN
 ```
-
-3. Install the project dependencies:
-
-
-**Using `cmake`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-INSTALL-COMMAND-HERE'
-```
-
-
-**Using `cargo`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-INSTALL-COMMAND-HERE'
-```
-
-
-**Using `docker`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Docker-2CA5E0.svg?style={badge_style}&logo=docker&logoColor=white" />](https://www.docker.com/)
-
-```sh
-❯ docker build -t shankswhite/YOLO-KAN .
-```
-
-
-
-
-###  Usage
-Run YOLO-KAN using the following command:
-**Using `cmake`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-RUN-COMMAND-HERE'
-```
-
-
-**Using `cargo`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-RUN-COMMAND-HERE'
-```
-
-
-**Using `docker`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Docker-2CA5E0.svg?style={badge_style}&logo=docker&logoColor=white" />](https://www.docker.com/)
-
-```sh
-❯ docker run -it {image_name}
-```
-
-
-###  Testing
-Run the test suite using the following command:
-**Using `cmake`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-TEST-COMMAND-HERE'
-```
-
-
-**Using `cargo`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-TEST-COMMAND-HERE'
-```
-
-
----
-##  Project Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
-
-##  Contributing
-
-- **💬 [Join the Discussions](https://github.com/shankswhite/YOLO-KAN/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://github.com/shankswhite/YOLO-KAN/issues)**: Submit bugs found or log feature requests for the `YOLO-KAN` project.
-- **💡 [Submit Pull Requests](https://github.com/shankswhite/YOLO-KAN/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your github account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone https://github.com/shankswhite/YOLO-KAN
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to github**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://github.com{/shankswhite/YOLO-KAN/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=shankswhite/YOLO-KAN">
-   </a>
-</p>
-</details>
-
----
-
-##  License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
 
 ---
