@@ -34,11 +34,13 @@ Jeongkyu Lee, NEU Professor
 
 ##  Architecture
 
-![](/Users/levon/Cloud/SynologyDrive/Projects/CV/yolo-kan-arch.png)
+![yolo-arch]<img width="1216" alt="yolo-kan-arch" src="https://github.com/user-attachments/assets/ac396832-e416-4426-a0a2-67d4dfea944f" />
 
 
 
-![yolo-kan-flatten](/Users/levon/Cloud/SynologyDrive/Projects/CV/yolo-kan-flatten.jpg)
+
+![yolo-kan-flatten](https://github.com/user-attachments/assets/0cfaf4c8-1f0b-4b7a-8b24-4603cf8564b4)
+
 
 ---
 
