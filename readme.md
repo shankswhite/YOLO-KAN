@@ -3,6 +3,7 @@
     <div style="display: inline-block;">
         <h2 style="display: inline-block; vertical-align: middle; margin-top: 0;">YOLO-KAN</h2>
         <p>
+	<em><code>❯ Here is the official YOLO-KAN repo.</code></em>
 </p>
         <p>
 	<img src="https://img.shields.io/github/license/shankswhite/YOLO-KAN?style=flat-square&logo=opensourceinitiative&logoColor=white&color=A931EC" alt="license">
@@ -34,7 +35,7 @@ Jeongkyu Lee, NEU Professor
 
 ##  Architecture
 
-![yolo-arch]<img width="1216" alt="yolo-kan-arch" src="https://github.com/user-attachments/assets/ac396832-e416-4426-a0a2-67d4dfea944f" />
+<img width="1216" alt="yolo-kan-arch" src="https://github.com/user-attachments/assets/ac396832-e416-4426-a0a2-67d4dfea944f" />
 
 
 
